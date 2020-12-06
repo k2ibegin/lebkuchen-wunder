@@ -84,8 +84,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.6rem;
-    padding: 1.9rem;
-    color: white;
+    padding: 5rem 3rem;
 }
 
 .center {
@@ -93,56 +92,25 @@
     margin:auto;
 }
 
-.cookies-grid {
-    grid-template-rows: 1fr 2fr;
-}
-
-.cookies-text-grid, .cakes-grid, .lebkuchen-grid {
-    height:200px;
-    opacity: 1;
-}
-
-.cookies-text-grid:hover, .cakes-grid:hover, .lebkuchen-grid:hover {
+.cookies-grid:hover, .cakes-grid:hover, .lebkuchen-grid:hover {
     opacity: 0.7;
-    transition: 0.7s;
-}
-
-.cookies-images-grid img {
-    height: 300px;
-    padding:0;
-    width: 500px;
-    opacity: 0.8;
-}
-
-.cookies-images-grid img:hover {
-    opacity: 1;
+    color: white;
     transition: 0.5s;
 }
 
-.cookies-images-grid:hover {
+ .cakes-grid, .cookies-grid, .lebkuchen-grid {
     opacity: 1;
-    transition: 0.7s;
+    padding: 2rem;
+    color: white;
+    border: 0.2rem;
+    background-image: linear-gradient(135deg,  rgba(179, 71, 111, 0.45) 0%, rgba(133, 62, 88, 0.45) 28%,rgba(131, 60, 108, 0.45) 42%, rgba(161, 55, 128, 0.45) 85.716%,rgba(155, 25, 135, 0.45) 85.716%, rgba(151, 28, 133, 0.45) 100.002%);
+    border-radius: 0.4rem;
+    grid-template-rows: 1fr 2fr;
 }
 
- .cakes-grid {
-    /* background-image: url("../assets/images/muffins.png"); */
-    background-size: 400px 200px;
-    color: whitesmoke;
-    border-radius: 0.8rem;
-}
-
-.cookies-grid {
-    /* background-image: url("../assets/images/lebkuchen1.jfif"); */
-    background-size: 400px 200px;
-    color: whitesmoke;
-    border-radius: 0.8rem;
-}
-
-.lebkuchen-grid {
-    /* background-image: url("../assets/images/lebkuchen2.jfif"); */
-     background-size: 400px 200px;
-     color: whitesmoke;
-    border-radius: 0.8rem;
+.food-icon {
+    height:10rem;
+    width: 10rem;
 }
 
 @media(max-width:960px) {

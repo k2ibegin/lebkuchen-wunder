@@ -7,11 +7,19 @@
 
 body {
     font-size: 1rem;
-    background-color: #fd3a69;
-    margin:0;
+    /* background-color: #fd3a69; */
+/* background-image: radial-gradient(circle at top center, rgb(244, 234, 104),rgb(234, 179, 103),rgb(224, 125, 103),rgb(214, 70, 102),rgb(204, 15, 101)); */
+/* background-image: radial-gradient(circle at top center, rgb(255, 13, 187),rgb(115, 55, 110)); */
+/* background-image: radial-gradient(circle at top center, rgb(38, 217, 249),rgb(46, 14, 92)); */
+/* background-image: radial-gradient(circle at bottom center, rgb(248, 160, 158),rgb(136, 31, 164)); */
+/* background-image: radial-gradient(circle at center center, rgba(60, 60, 60,0.08) 0%, rgba(60, 60, 60,0.08) 12%,transparent 12%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at center center, rgba(29, 29, 29,0.08) 0%, rgba(29, 29, 29,0.08) 90%,transparent 90%, transparent 96%,transparent 96%, transparent 100%),radial-gradient(circle at center center, rgba(54, 54, 54,0.08) 0%, rgba(54, 54, 54,0.08) 6%,transparent 6%, transparent 50%,transparent 50%, transparent 100%),radial-gradient(circle at center center, rgba(217, 217, 217,0.08) 0%, rgba(217, 217, 217,0.08) 8%,transparent 8%, transparent 26%,transparent 26%, transparent 100%),radial-gradient(circle at center center, rgba(252, 252, 252,0.08) 0%, rgba(252, 252, 252,0.08) 59%,transparent 59%, transparent 93%,transparent 93%, transparent 100%),linear-gradient(90deg, hsl(319,75%,80%),hsl(319,75%,80%)); background-size: 85px 85px;
+ */
+ background-image: linear-gradient(135deg, rgba(162, 241, 39, 0.45) 0%, rgba(162, 241, 39, 0.45) 14.286%,rgba(172, 208, 65, 0.45) 14.286%, rgba(172, 208, 65, 0.45) 28.572%,rgba(182, 175, 90, 0.45) 28.572%, rgba(182, 175, 90, 0.45) 42.858%,rgba(192, 142, 116, 0.45) 42.858%, rgba(192, 142, 116, 0.45) 57.144%,rgba(201, 108, 142, 0.45) 57.144%, rgba(201, 108, 142, 0.45) 71.43%,rgba(211, 75, 167, 0.45) 71.43%, rgba(211, 75, 167, 0.45) 85.716%,rgba(221, 42, 193, 0.45) 85.716%, rgba(221, 42, 193, 0.45) 100.002%),linear-gradient(45deg, rgb(210, 39, 168) 0%, rgb(210, 39, 168) 14.286%,rgb(199, 61, 148) 14.286%, rgb(199, 61, 148) 28.572%,rgb(188, 83, 128) 28.572%, rgb(188, 83, 128) 42.858%,rgb(177, 105, 109) 42.858%, rgb(177, 105, 109) 57.144%,rgb(166, 127, 89) 57.144%, rgb(166, 127, 89) 71.43%,rgb(155, 149, 69) 71.43%, rgb(155, 149, 69) 85.716%,rgb(144, 171, 49) 85.716%, rgb(144, 171, 49) 100.002%);
+margin:0;
     overflow-x: hidden;
     font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
     color: #333;
     line-height: 1.5;
     font-weight: normal;
 }
+
