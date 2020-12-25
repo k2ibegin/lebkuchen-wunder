@@ -5,6 +5,9 @@
     justify-content: space-around;
     text-align: center;
 
+    .nav {
+        display: none;
+    }
     .fullscreen-video-wrap {
         position: absolute;
         top: 0;
@@ -55,32 +58,209 @@
             font-size: 1.2rem;
         }
 
-        .read-more-button {
+        .read-more-link {
             height: 3rem;
             width: 10rem;
-            font-size: 130%;
+            font-size: 100%;
             align-self: center;
             background-color: #ec407a;
             border: none;
+            text-decoration: none;
             text-align: center;
             color: white;
             margin-top: 2rem;
-            padding: 0.8rem 1.2rem;
+            padding: 0.7rem 0;
             border-radius: 0.5rem;
             transition: 0.7s;
             cursor: pointer;
         }
 
-        .read-more-button:hover {
+        .read-more-link:hover {
             opacity: 0.7;
         }
 
-        .read-more-button:focus {
+        .read-more-link:active,
+        .read-more-link:focus {
             outline: none;
+            border: none;
+            border-radius: 0.5rem;
+        }
+
+        .read-more-link:focus::-moz-focus-inner {
+            border: none;
         }
     }
 
     @media (min-width: 768px) {
+        .nav {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            z-index: 2;
+            .navigation-list {
+                display: flex;
+                justify-content: center;
+
+                .about,
+                .write-us {
+                    a:link,
+                    a:visited {
+                        text-decoration: none;
+                        padding: 8px 0;
+                        font-size: 140%;
+                        color: #fff;
+                        border-bottom: 2px solid transparent;
+                        -webkit-transition: border-bottom 0.2s;
+                        transition: border-bottom 0.2s;
+                    }
+
+                    a:hover,
+                    a:active {
+                        transition: 0.6s;
+                        border-bottom: 2px solid transparent;
+                        border-bottom-color: #ec407a;
+                    }
+                }
+
+                .navigation-item {
+                    color: #fff;
+                    padding: 1rem 1rem;
+                }
+
+                .logo {
+                    margin-left: 5rem;
+                }
+
+                .about {
+                    margin-left: auto;
+                }
+                .write-us {
+                    margin-right: auto;
+                }
+
+                .social-network {
+                    padding: 1rem 0.7rem !important;
+                }
+
+                fa-icon {
+                    color: white;
+                    opacity: 1;
+                }
+
+                .sn-icon {
+                    padding-bottom: 0.5rem;
+                    border-bottom: 0.13rem solid transparent;
+                    -webkit-transition: border-bottom 0.2s;
+                    transition: border-bottom 0.2s;
+                }
+                .sn-icon:hover,
+                .sn-icon:active {
+                    border-bottom: 0.13rem solid transparent;
+                    border-bottom-color: #ec407a;
+                    transition: 0.6s;
+                }
+
+                .instagram:hover,
+                .instagram:active {
+                    opacity: 0.7;
+                    transition: 0.7s;
+                }
+
+                .telegram:hover,
+                .telegram:active {
+                    opacity: 0.7;
+                    transition: 0.7s;
+                }
+
+                .whatsapp:hover,
+                .whatsapp:active {
+                    opacity: 0.7;
+                    transition: 0.7s;
+                }
+
+                .viber:hover,
+                .viber:active {
+                    opacity: 0.7;
+                    transition: 0.7s;
+                }
+
+                .whatsapp {
+                    margin-right: 3rem !important;
+                }
+
+                .social-network {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                /* Tooltip text */
+                .tooltiptext {
+                    visibility: hidden;
+                    width: 4rem;
+                    font-size: 80%;
+                    color: #fff;
+                    text-align: center;
+                    padding: 0.3rem 0;
+                    border-radius: 0.35rem;
+                    transform: translateY(100%);
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -2.2rem;
+
+                    /* Position the tooltip text - see examples below! */
+                    position: absolute;
+                    z-index: 2;
+                }
+
+                /* Show the tooltip text when you mouse over the tooltip container */
+                .social-network:hover {
+                    .tooltiptext {
+                        visibility: visible;
+                        top: 100%;
+                        left: 50%;
+                        margin-left: -2.2rem;
+                        transition: 0.4s ease-in-out;
+                        transform: translateY(0);
+                    }
+                }
+
+                .whatsapp-item {
+                    position: relative;
+                    display: inline-block;
+                }
+                .whatsapp-tooltiptext {
+                    visibility: hidden;
+                    width: 4rem;
+                    font-size: 80%;
+                    color: #fff;
+                    text-align: center;
+                    padding: 0.3rem 0;
+                    border-radius: 0.35rem;
+                    transform: translateY(100%);
+                    top: 100%;
+                    left: 30%;
+                    margin-left: -2.2rem;
+
+                    /* Position the tooltip text - see examples below! */
+                    position: absolute;
+                    z-index: 2;
+                }
+
+                .whatsapp-item:hover {
+                    .whatsapp-tooltiptext {
+                        visibility: visible;
+                        top: 100%;
+                        left: 30%;
+                        margin-left: -2.2rem;
+                        transition: 0.4s ease-in-out;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+
         .header-content {
             display: flex;
 
@@ -90,13 +270,6 @@
 
             .introduction-text {
                 font-size: 2rem;
-            }
-
-            .read-more-button {
-                height: 3rem;
-                width: 10rem;
-                font-size: 120%;
-                align-self: center;
             }
         }
     }

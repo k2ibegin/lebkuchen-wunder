@@ -2,7 +2,7 @@ $text-font-size-481-to-960: 110%;
 $text-font-size-0-to-480: 100%;
 $text-font-size-greater-than-961: 120%;
 
-.services {
+.services-introduction-section {
     width: 100%;
 
     .services-introduction {
@@ -68,6 +68,9 @@ $text-font-size-greater-than-961: 120%;
             color: white;
             background-image: linear-gradient(0deg, rgba(12, 22, 71, 0.26) 0%, rgba(5, 9, 27, 0.26) 100%);
             border-radius: 0.4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .food-icon {
                 height: 10rem;
@@ -78,27 +81,34 @@ $text-font-size-greater-than-961: 120%;
                 display: none;
             }
 
-            .read-more-button {
-                height: 2.8rem;
-                width: 8.8rem;
-                font-size: 120%;
+            .services-intro-read-more-link {
+                height: 3rem;
+                width: 10rem;
+                font-size: 100%;
+                text-decoration: none;
                 align-self: center;
                 background-color: #ec407a;
                 border: none;
-                text-align: center;
                 color: white;
-                padding: 0rem 1.2rem;
                 border-radius: 0.5rem;
                 transition: 0.7s;
                 cursor: pointer;
+                padding: 0.7rem 0;
+                text-align: center;
             }
 
-            .read-more-button:hover {
+            .services-intro-read-more-link:hover {
                 opacity: 0.7;
             }
 
-            .read-more-button:focus {
+            .services-intro-read-more-link:focus,
+            .services-intro-read-more-link:active {
                 outline: none;
+                border: none;
+            }
+
+            .services-intro-read-more-link:focus::-moz-focus-inner {
+                border: none;
             }
         }
 
@@ -130,6 +140,7 @@ $text-font-size-greater-than-961: 120%;
                 margin: 2rem 0rem;
                 p {
                     display: block;
+                    margin-top: 1rem;
                     font-size: $text-font-size-0-to-480;
                 }
             }

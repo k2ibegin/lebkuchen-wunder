@@ -1,4 +1,27 @@
 <header class="container">
+  <div class="nav">
+    <li class="navigation-list">
+      <ul class="navigation-item logo">Logo</ul>
+      <ul class="navigation-item about"><a href="#">About</a></ul>
+      <ul class="navigation-item write-us"><a href="#">Contact us</a></ul>
+      <ul class="navigation-item social-network "><a href="#"><span>
+            <fa-icon class="instagram sn-icon" [icon]="['fab', 'instagram']" size="2x"></fa-icon>
+          </span></a>
+        <span class="tooltiptext">Instagram</span></ul>
+      <ul class="navigation-item social-network "><a href="#">
+          <fa-icon class="telegram sn-icon" [icon]="['fab', 'telegram']" size="2x"></fa-icon>
+        </a>
+        <span class="tooltiptext">Telegram</span></ul>
+      <ul class="navigation-item social-network"><a href="#">
+          <fa-icon class="viber sn-icon" [icon]="['fab', 'viber']" size="2x"></fa-icon>
+        </a>
+        <span class="tooltiptext">Viber</span></ul>
+      <ul class="navigation-item  whatsapp-item "><a href="#">
+          <fa-icon class="whatsapp sn-icon" [icon]="['fab', 'whatsapp']" size="2x"></fa-icon>
+        </a>
+        <span class="whatsapp-tooltiptext">Whatsapp</span></ul>
+    </li>
+  </div>
   <div class="fullscreen-video-wrap">
     <video src="../assets/video/lebkuchen_video.mp4" autoplay="true" loop="true"></video>
   </div>
@@ -6,12 +29,12 @@
   <div class="header-content">
     <h1>Welcome</h1>
     <p class="introduction-text">We bake with love and passion.</p>
-    <button class="read-more-button">Read More</button>
+    <a href="#services-introduction" class="read-more-link">Show me more</a>
   </div>
 </header>
 
-<section class="services">
-  <div class="services-introduction">
+<section class="services-introduction-section">
+  <div class="services-introduction" id="services-introduction">
     <h2 class="heading-mobile">About Us</h2>
     <p class="about-description">
       We bake for you a wide variety of sweets. <br> Whether you want beautiful and delicious Lebkuchen, home made
@@ -26,7 +49,7 @@
       <p class="chocolates_text">We make for you sweet <b>NOT</b> sugary chocolates. Click below to know more.
       </p>
       <br>
-      <button class="read-more-button">Read More</button>
+      <a href="#services-introduction" class="services-intro-read-more-link">Show me more</a>
     </div>
     <div class="cakes-grid">
       <img src="../assets/images/icons/cake_icon.png" alt="healthydesserts" class="food-icon">
@@ -34,7 +57,7 @@
       <br>
       <p class="desserts_text">We bake for you delicious healthy desserts. For available flavors click below.</p>
       <br>
-      <button class="read-more-button">Read More</button>
+      <a href="#services-introduction" class="services-intro-read-more-link">Show me more</a>
     </div>
     <div class="lebkuchen-grid">
       <img src="../assets/images/icons/lebkuchen_icon.png" alt="lebkuchen" class="food-icon">
@@ -42,11 +65,21 @@
       <br>
       <p class="lebkuchen_text">Surprise your loved ones now with delicious Lebkuchen. Click below to know more.</p>
       <br>
-      <button class="read-more-button">Read More</button>
+      <a href="#services-introduction" class="services-intro-read-more-link">Show me more</a>
     </div>
   </div>
 </section>
 
-<section class="samplework">
+<section class="services-details-section">
+  <div class="services-details">
+    <div class="chocolates"></div>
+    <div class="cakes"></div>
+    <div class="lebkuchen"></div>
+  </div>
+</section>
 
+<section class="footer-section">
+  <footer class="footer">
+
+  </footer>
 </section>
